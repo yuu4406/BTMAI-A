@@ -1,0 +1,291 @@
+/* mobile-tablet */
+@media all and (max-width: 1024px) {
+  .header_time,
+  .document_menu {
+    display: none;
+    transition: max-height 0.5s ease;
+  }
+  .menu-list-box {
+    position: fixed;
+    display: none;
+  }
+  .menu-list-box.active {
+    display: block; /* Hiển thị khi có lớp active */
+  }
+  .products {
+    overflow: hidden;
+  }
+  .product_img {
+    display: inline-flex;
+  }
+  .icon-menu {
+    /* display: block; */
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: right;
+    color: #ffffff;
+    margin-right: 3%;
+    font-size: 30px;
+  }
+  .closebtn {
+    display: none;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .openbtn {
+    /* display: none; */
+    z-index: 5;
+    cursor: pointer;
+  }
+  .document_menu li,
+  ul.document_menu li,
+  ul.document_menu {
+    background-color: unset;
+  }
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .menu {
+    position: fixed;
+    top: 0;
+  }
+  .menu-list li:hover > ul.document_menu {
+    display: none; /* Không hiển thị menu con khi hover trên điện thoại */
+  }
+  .document_menu li {
+    position: unset;
+    top: 20px;
+    padding: 1.5px;
+  }
+  ul.document_menu li {
+    padding: 4px 8px;
+    text-align: left;
+    border: none;
+  }
+  ul.document_menu {
+    position: unset;
+    z-index: 3;
+    margin-left: 20px !important;
+  }
+  .menu-list a {
+    position: unset;
+  }
+  .post-content-left-middle_2 {
+    display: none;
+  }
+  .menu-icon {
+    width: 60px;
+    background-color: unset;
+    top: -20px;
+  }
+  .menu-list {
+    display: block;
+    text-align: unset;
+    width: 100%;
+    background-color: #6e6756;
+    margin-top: 60px;
+    height: 36%;
+  }
+  .menu-list li {
+    padding: 5.5px 0 !important;
+  }
+  .menu-list-box {
+    height: 100vh;
+  }
+  .post-content-left-top {
+    display: block;
+  }
+  .post-content-left-right {
+    display: none;
+  }
+  .post-content-left {
+    /* display: unset; */
+    grid-template:
+      "item1 item1"
+      "item2 item3"
+      "item5 item5";
+    gap: 10px;
+  }
+  .post-content-left .left p {
+    /* font-weight: 100;
+        font-size: 16px;
+        text-align: justify;
+        margin: 0; */
+    white-space: normal; /* Cho phép xuống dòng */
+    overflow: visible; /* Hiển thị đầy đủ văn bản */
+  }
+  .post-content-left .left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .mn-img img {
+    height: 80%;
+  }
+  .mn-img {
+    height: 100%;
+  }
+  .post-content-left .right img {
+    padding-left: 0;
+  }
+  .exhibition-content {
+    grid-template-areas:
+      "left left"
+      "top bot";
+    gap: 10px;
+  }
+  .exhibition-item2,
+  .exhibition-item3 {
+    width: unset;
+  }
+  .infomation,
+  .documentary-typical,
+  .exhibition,
+  .media-new {
+    display: unset;
+  }
+
+  .photo_gallery {
+    display: none;
+  }
+  .exhibition {
+    display: grid;
+    grid-template-areas:
+      "topleft"
+      "botright"
+      "topright"
+      "botleft";
+    column-gap: 30px;
+  }
+  .documentary-content p {
+    font-size: 14px;
+  }
+
+  .most-view-items {
+    display: flex; /* Sử dụng Flexbox để sắp xếp mục */
+  }
+  .most-view-items:nth-child(n + 6) {
+    display: none !important; /* Ẩn các mục từ thứ 6 trở đi */
+  }
+  .facebook_item {
+    height: unset;
+  }
+  .fb-page.fb_iframe_widget.fb_iframe_widget_fluid {
+    width: 100%;
+  }
+  .menu-icon-list {
+    display: none;
+  }
+  .post-content-left-top {
+    display: flex;
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  }
+
+  .post-content-left-top .right {
+    order: -1; /* Đưa ảnh lên đầu */
+    margin-bottom: 20px; /* Khoảng cách giữa ảnh và nội dung bên dưới */
+  }
+
+  .post-content-left-top .left {
+    order: 0; /* Đặt nội dung bên dưới ảnh */
+  }
+  .post-content-left .right img {
+    height: unset;
+  }
+  .most-view-items img {
+    display: none;
+  }
+  .most-view-items {
+    margin-left: 20px;
+  }
+  .typical-artifacts-content div {
+    height: unset;
+  }
+  .typical-artifacts-content {
+    display: flex;
+  }
+  #footer {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .infomation_item {
+    margin-top: 30px;
+  }
+}
+
+/*tablet*/
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* menu-list */
+  .menu-list {
+    width: 30%;
+    display: block;
+    position: fixed;
+    background-color: #6e6756;
+    text-align: left;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-top: 40px;
+    overflow-y: -200px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .menu-list li {
+    margin-top: 20px;
+  }
+
+  ul.document_menu {
+    /* display: block !important; */
+    position: unset;
+    top: 0;
+    margin-bottom: 40px;
+  }
+  .document_menu li {
+    margin-left: 20px;
+    border-bottom: none;
+    margin-top: 0;
+  }
+
+  .products,
+  #media-education,
+  .document_menu,
+  .photo_gallery {
+    display: none;
+  }
+  .infomation {
+    margin: 0;
+  }
+  .infomation {
+    display: unset;
+    padding-left: 40px;
+  }
+
+  /* post */
+  .post {
+    display: block;
+  }
+  .facebook_item {
+    height: unset;
+  }
+  #footer {
+    padding-left: 40px;
+  }
+  .content_right {
+    /* display: grid; */
+    grid-template-areas: "title_middle title_bottom";
+    gap: 20px;
+  }
+  .title_bottom h1 {
+    margin: 0;
+  }
+}
+
+/*pc*/
+@media all and (min-width: 1025px) {
+  .post-content-left-middle_2 {
+    display: none;
+  }
+}

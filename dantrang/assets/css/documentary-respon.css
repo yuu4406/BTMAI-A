@@ -1,0 +1,31 @@
+/* mobile-tablet */
+@media all and (max-width: 1024px) {
+  .content_top,
+  .content_bottom {
+    height: unset;
+  }
+}
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .gallery {
+    display: block;
+  }
+  .content_top img {
+    margin-bottom: 4px;
+  }
+  .content_top,
+  .content_bottom {
+    display: block;
+  }
+}
+
+/*tablet*/
+@media (min-width: 767px) and (max-width: 1024px) {
+  .gallery {
+    display: block;
+  }
+}
+
+/*pc*/
+@media all and (min-width: 1025px) {
+}

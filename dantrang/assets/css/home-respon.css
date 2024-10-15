@@ -1,0 +1,183 @@
+/* mobile-tablet */
+@media all and (max-width: 1024px) {
+  .header_time {
+    display: none;
+  }
+  .menu-list {
+    /* display: none;
+        transition: 0.3s ease-in-out !important; */
+  }
+  /* .icon-menu{
+        display: flex !important;
+        width: 100%;
+        align-self: center;
+        justify-content: right;
+        color: #ffffff;
+        margin-right: 3%;
+        font-size: 30px;
+    } */
+  .products {
+    overflow: hidden;
+  }
+  .product_img {
+    display: inline-flex;
+  }
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .post-content-left-middle_2 {
+    display: none;
+  }
+  .post-content-left-top {
+    display: block;
+  }
+  .post-content-left-right {
+    display: none;
+  }
+  .post-content-left {
+    /* display: unset; */
+    grid-template:
+      "item1 item1"
+      "item2 item3"
+      "item5 item5";
+    gap: 10px;
+  }
+  .post-content-left .left p {
+    /* font-weight: 100;
+        font-size: 16px;
+        text-align: justify;
+        margin: 0; */
+    white-space: normal; /* Cho phép xuống dòng */
+    overflow: visible; /* Hiển thị đầy đủ văn bản */
+  }
+  .post-content-left .left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .mn-img img {
+    height: 80%;
+  }
+  .mn-img {
+    height: 100%;
+  }
+  .post-content-left .right img {
+    padding-left: 0;
+  }
+  .exhibition-content {
+    grid-template-areas:
+      "left left"
+      "top bot";
+    gap: 10px;
+  }
+  .exhibition-item2,
+  .exhibition-item3 {
+    width: unset;
+  }
+  .infomation,
+  .documentary-typical,
+  .exhibition,
+  .media-new {
+    display: unset;
+  }
+
+  .photo_gallery {
+    display: none;
+  }
+  .exhibition {
+    display: grid;
+    grid-template-areas:
+      "topleft"
+      "botright"
+      "topright"
+      "botleft";
+    column-gap: 30px;
+  }
+  .documentary-content p {
+    font-size: 14px;
+  }
+
+  .most-view-items {
+    display: flex; /* Sử dụng Flexbox để sắp xếp mục */
+  }
+  .most-view-items:nth-child(n + 6) {
+    display: none !important; /* Ẩn các mục từ thứ 6 trở đi */
+  }
+  .facebook_item {
+    height: unset;
+  }
+  .fb-page.fb_iframe_widget.fb_iframe_widget_fluid {
+    width: 100%;
+  }
+  .menu-icon-list {
+    display: none;
+  }
+  .post-content-left-top {
+    display: flex;
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  }
+
+  .post-content-left-top .right {
+    order: -1; /* Đưa ảnh lên đầu */
+    margin-bottom: 20px; /* Khoảng cách giữa ảnh và nội dung bên dưới */
+  }
+
+  .post-content-left-top .left {
+    order: 0; /* Đặt nội dung bên dưới ảnh */
+  }
+  .post-content-left .right img {
+    height: unset;
+  }
+  .most-view-items img {
+    display: none;
+  }
+  .most-view-items {
+    margin-left: 20px;
+  }
+  .typical-artifacts-content div {
+    height: unset;
+  }
+  .typical-artifacts-content {
+    display: flex;
+  }
+  #footer {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .infomation_item {
+    margin-top: 30px;
+  }
+}
+
+/*tablet*/
+@media (min-width: 767px) and (max-width: 1024px) {
+  .post-content-left-middle_2 {
+    grid-area: item6;
+  }
+
+  .post-content-left {
+    grid-template:
+      "item1 item1 item1 item1    "
+      "item2 item3 item4 item6"
+      "item5 item5 item5 item5";
+  }
+  .exhibition {
+    grid-template-areas:
+      "topleft"
+      "botleft"
+      "topright"
+      "botright";
+  }
+
+  .documentary-typical {
+    display: unset;
+  }
+
+  .post-new .left .tag-time {
+    display: none !important;
+  }
+}
+
+/*pc*/
+@media all and (min-width: 1025px) {
+}

@@ -1,0 +1,32 @@
+/* Định dạng cho slider */
+.slider-container {
+    display: flex; /* Hiển thị các hình ảnh theo hàng ngang */
+    overflow: hidden; /* Ẩn nội dung tràn ra */
+    width: 100%; /* Đảm bảo thanh trượt chiếm toàn bộ chiều rộng */
+    position: relative; /* Định vị cho các nút điều hướng */
+}
+
+.slider-item {
+    min-width: 100%; /* Mỗi hình ảnh chiếm toàn bộ chiều rộng của slider */
+    transition: transform 0.5s ease; /* Tạo hiệu ứng trượt mượt */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px; /* Vị trí nút 'Quay lại' */
+}
+
+.next-btn {
+    right: 10px; /* Vị trí nút 'Tiếp theo' */
+}

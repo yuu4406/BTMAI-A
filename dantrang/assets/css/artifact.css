@@ -1,0 +1,125 @@
+.atf_new1{grid-area: item1;}
+.atf_new2{grid-area: item2;}
+.atf_new3{grid-area: item3;}
+
+.artifact_new_img{
+    display: grid;
+    grid-template-areas: 
+    'item1 item2'
+    'item1 item3';
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.img_oj img{
+    width: 100%;
+    object-fit: cover;
+}
+.box_img{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+
+}
+.artifact_new{grid-area: item1;}
+.ceramics{grid-area: item2;}
+.construction{grid-area: item3;}
+.metal{grid-area: item4;}
+.content_right{grid-area: item5;}
+.artifact{
+    display: grid;
+    grid-template-areas: 
+    'item1 item5'
+    'item2 item5'
+    'item3 item5'
+    'item4 item5'
+    ;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+.title{
+    color: #5e5546;
+}
+.title-img p{
+    margin: 0;
+}
+.title-img {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.pagination {
+    /* display: flex; */
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .pagination a, .pagination span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .pagination .active {
+    background-color: #5e5546; /* Màu nền cho trang hiện tại */
+    color: #fff;
+    border: none;
+  }
+  
+  .pagination .prev, .pagination .next {
+    font-size: 18px;
+  }
+  
+  .pagination .dots {
+    color: #333;
+  }
+  
+
+  /* Modal (background) */
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 5;
+    /* padding-top: 60px; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* Màu nền với độ trong suốt */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Content (Image) */
+  .modal_box{
+    width: 470px;
+    height: 506px;
+    background: #fff;
+  }
+.modal-content {
+    position: unset !important;
+    margin: auto;
+    display: block;
+    width: 440px !important;
+    height: 415px;
+    top: 20%;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.button-close{
+    border: none;
+    background-color: unset;
+    font-weight: 700;
+    color: #5e5546;
+}
+  
+  
+
+

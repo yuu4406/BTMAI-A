@@ -1,0 +1,29 @@
+/* mobile-tablet */
+@media all and (max-width: 1024px) {
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .artifact {
+    display: block;
+  }
+  .modal_box {
+    width: unset;
+    height: unset;
+  }
+  .modal-content {
+    width: 350px !important;
+    height: unset;
+  }
+}
+
+/*tablet*/
+@media (min-width: 767px) and (max-width: 1024px) {
+  .artifact {
+    display: block;
+  }
+}
+
+/*pc*/
+@media all and (min-width: 1025px) {
+}

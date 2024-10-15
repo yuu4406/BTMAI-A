@@ -1,0 +1,25 @@
+/* mobile-tablet */
+@media all and (max-width: 1024px) {
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .education,
+  .content_top,
+  .content_bottom {
+    display: block;
+  }
+  .education {
+  }
+}
+
+/*tablet*/
+@media (min-width: 767px) and (max-width: 1024px) {
+  .education {
+    display: block;
+  }
+}
+
+/*pc*/
+@media all and (min-width: 1025px) {
+}

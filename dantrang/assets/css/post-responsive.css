@@ -1,0 +1,25 @@
+/* mobile-tablet */
+@media all and (max-width: 1024px) {
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  /* post */
+  .post {
+    display: block;
+  }
+  .tag-time.d-flex.justify-content-lg-start.mt-3 {
+    justify-content: space-between;
+  }
+  .time {
+    margin-left: unset;
+  }
+}
+
+/*tablet*/
+@media (min-width: 767px) and (max-width: 1024px) {
+}
+
+/*pc*/
+@media all and (min-width: 1025px) {
+}
